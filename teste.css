@@ -1,0 +1,84 @@
+
+
+body{
+    background: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.Menu3d {
+    position: relative;
+    transform: skewY(-15deg);
+    transition: 0.5s;
+    z-index: 999;
+    margin-top: 200px;
+}
+
+.Menu3d li {
+    position: relative;
+    list-style: none;
+    width: 150px;
+    background: #0b0c0c;
+    z-index: var(--i);
+    transition: 0.5s;
+}
+
+.Menu3d li:hover {
+    background: #1E90FF;
+    transform: translateX(20px);
+}
+
+.Menu3d li::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -30px;
+    width: 30px;
+    height: 100%;
+    background: #070707;
+    transform-origin: right;
+    transform: skewY(45deg);
+    transition: 0.5s;
+}
+
+.Menu3d li:hover::before {
+    background: #0f2f42;
+}
+
+.Menu3d li::after {
+    content: "";
+    position: absolute;
+    display: flex;
+    top: -30px;
+    left: 0;
+    height: 30px;
+    width: 100%;
+    background: #070707;
+    transform-origin: bottom;
+    transform: skewX(45deg);
+    transition: 0.5s;
+}
+
+.Menu3d li:hover::after {
+    background: #2982b9;
+}
+
+.Menu3d li a {
+    text-decoration: none;
+    color: white;
+    padding: 15px;
+    height: 40px;
+    display: block;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    font-size: 14px;
+    transition: 0.5s;
+}
+
+.Menu3d li:hover a {
+    color: white;
+}
+
+.Menu3d li:last-child::after {
+    box-shadow: -100px 110px 20px #00000070;
+}

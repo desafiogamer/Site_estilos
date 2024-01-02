@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=], initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css">
+</head>
+<body>
+    <header class="header">
+        <div class="icon"><h1>Styles.</h1></div>
+        <nav class="navbar">
+            <a href="#home" class="BtnHome">Inicio</a>
+            <a href="#" class="Sobre">Efeitos</a>
+            <a href="#">Ajuda</a>
+        </nav>
+    </header>
+    <section class="home">
+        <div id="container"></div>
+        <div id="cursor"></div>
+        <span class="black"></span>
+    </section>
+    <section class="About">
+        <div class="efeito"></div>
+        <div class="efeito-container">
+            <h1 class="title">Loading</h1>
+            <div class="informacoes">
+                <img src="./img/efeito.png" alt="">
+                <img src="./img/efeito2.png" alt="">
+            </div>
+            <div class="info">
+                <h1>Efeito de <span>loanding.</span></h1>
+                <p>Neste efeito só utilizará HTML e CSS, caso a formatação(*) do css estiver overflow: hidden; Mudem o  hidden para 'Auto'. Assim funcionará perfeitamente!</p>
+            </div>
+            <div class="codigo-box">
+                <div class="codigo-container">
+                    <h1>Codigo <span>HTML.</span></h1>
+                    <div class="codigo">
+                            &lt<span>div</span> class="loading"&gt<br>
+                                <p>&lt<span>span</span> style="--i:1"&gt&lt<span>/span</span>&gt</p>
+                                <p>&lt<span>span</span> style="--i:2"&gt&lt<span>/span</span>&gt</p>
+                                <p>&lt<span>span</span> style="--i:3"&gt&lt<span>/span</span>&gt</p>
+                                <p>&lt<span>span</span> style="--i:4"&gt&lt<span>/span</span>&gt</p>
+                                <p>&lt<span>span</span> style="--i:5"&gt&lt<span>/span</span>&gt</p>
+                                <p>&lt<span>span</span> style="--i:6"&gt&lt<span>/span</span>&gt</p>
+                                <p>&lt<span>span</span> style="--i:7"&gt&lt<span>/span</span>&gt</p>
+                                <p>&lt<span>span</span> style="--i:8"&gt&lt<span>/span</span>&gt</p>
+                                <p>&lt<span>span</span> style="--i:9"&gt&lt<span>/span</span>&gt</p>
+                                <p>&lt<span>span</span> style="--i:10"&gt&lt<span>/span</span>&gt</p>
+                                <p>&lt<span>span</span> style="--i:11"&gt&lt<span>/span</span>&gt</p>
+                                <p>&lt<span>span</span> style="--i:12"&gt&lt<span>/span</span>&gt</p>
+                                <p>&lt<span>span</span> style="--i:13"&gt&lt<span>/span</span>&gt</p>
+                                <p>&lt<span>span</span> style="--i:14"&gt&lt<span>/span</span>&gt</p>
+                                <p>&lt<span>span</span> style="--i:15"&gt&lt<span>/span</span>&gt</p>
+                                <p>&lt<span>span</span> style="--i:16"&gt&lt<span>/span</span>&gt</p>
+                                <p>&lt<span>span</span> style="--i:17"&gt&lt<span>/span</span>&gt</p>
+                                <p>&lt<span>span</span> style="--i:18"&gt&lt<span>/span</span>&gt</p>
+                                <p>&lt<span>span</span> style="--i:19"&gt&lt<span>/span</span>&gt</p>
+                                <p>&lt<span>span</span> style="--i:20"&gt&lt<span>/span</span>&gt</p>
+                            &lt<span>/div</span>&gt        
+                    </div>
+                </div>
+
+                <div class="codigo-container">
+                    <h1>Codigo <span>CSS.</span></h1>
+                    <div class="codigoCss">
+                        <span>.loading</span> {<br>
+                        position: relative;<br>
+                        display: flex;
+                        <br>
+                        }
+                        <br>
+                        <br>
+                        <span>.loading span</span> {<br>
+                        position: absolute;<br>
+                        top: 70px;<br>
+                        left: 180px;<br>
+                        width: 5px;<br>
+                        height: 41px;<br>
+                        transform: rotate(calc(var(--i) * 18deg));<br>
+                        transform-origin: 0 150px;<br>
+                        z-index: 99;<br>
+                        }<br>
+                        <br>
+                        <span>.loading span::before</span>{<br>
+                        content: "";<br>
+                        position: absolute;<br>
+                        inset: 0;<br>
+                        animation: animate 8s linear infinite;<br>
+                        animation-delay: calc(var(--i) * 0.1s);<br>
+                        }<br>
+                        <br>
+                        <span>@keyframes animate </span>{<br>
+                        <span>0%</span> {<br>
+                        background: #0f0;<br>
+                        box-shadow: 0 0 5px #0f0,<br>
+                        0 0 15px #0f0,<br>
+                        0 0 30px #0f0,<br>
+                        0 0 50px #0f0;<br>
+                        rotate: 0deg;<br>
+                        }<br>
+                        
+                        <span>20%</span> {<br>
+                        background: #0f0;<br>
+                        box-shadow: 0 0 5px #0f0,<br>
+                        0 0 15px #0f0,<br>
+                        0 0 30px #0f0,<br>
+                        0 0 50px #0f0;<br>
+                        rotate: 0deg;<br>
+                        }<br>
+                        <br>
+                        <span>40%</span> {<br>
+                        background: #0f0;<br>
+                        box-shadow: 0 0 5px #0f0,<br>
+                        0 0 15px #0f0,<br>
+                        0 0 30px #0f0,<br>
+                        0 0 50px #0f0;<br>
+                        rotate: 90deg;<br>
+                        filter: hue-rotate(0deg);<br>
+                        }<br>
+                        <br>
+                        <span>80%</span> {<br>
+                        background: #0f0;<br>
+                        box-shadow: 0 0 5px #0f0,<br>
+                        0 0 15px #0f0,<br>
+                        0 0 30px #0f0,<br>
+                        0 0 50px #0f0;<br>
+                        rotate: 90deg;<br>
+                        filter: hue-rotate(360deg);<br>
+                        }<br>
+                        <br>
+                        <span>90% </span>{<br>
+                        box-shadow: none;<br>
+                        rotate: 90deg;<br>
+                        }<br>
+                        <br>
+                        <span>90.1%,
+                        100%</span> {<br>
+                        box-shadow: none;<br>
+                        background: transparent;<br>
+                        }<br>
+                        }
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="efeito-container">
+            <h1 class="title">Hover</h1>
+            <div class="informacoes">
+                <img src="./img/luz.png" alt="">
+                <img src="./img/luz2.png" alt="">
+            </div>
+            <div class="info">
+                <h1>Efeito de <span>Hover.</span></h1>
+                <p>Neste efeito só utilizará HTML e CSS, caso a formatação(*) do css estiver overflow: hidden; Mudem o hidden
+                    para 'Auto'. Cole esse link do header do seu HTML.<i class="bi bi-arrow-down-short"></i> <br><br> <span>&ltlink rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css"&gt</span> <br>Depois de colar no header copie e cole o codigo a baixo, tudo funcionará perfeitamente!</p>
+            </div>
+            <div class="codigo-box">
+                <div class="codigo-container">
+                    <h1>Codigo <span>HTML.</span></h1>
+                    <div class="codigo">
+                        &lt<span>ul</span> class="icones"&gt
+                        <p>&lt<span>li</span> style="--clr:#2483ff"&gt</p>
+                        <p id="frente">&lt<span>a</span> href="#" target="_blank"&gt</p>
+                        <p id="frente1">&lt<span>i</span> class="bi bi-linkedin"&gt&lt/<span>i</span>&gt</p>
+                        <p id="frente1">&lt<span>span</span>&gtLinkdin&lt/<span>span</span>&gt</p>
+                        <p id="frente"> &lt/<span>a</span>&gt</p>
+                        <p> &lt/<span>li</span>&gt</p>
+                        <p>&lt<span>li</span> style="--clr:#b9b9b9"&gt</p>
+                        <p id="frente">&lt<span>a</span> href="#" target="_blank"&gt</p>
+                        <p id="frente1">&lt<span>i</span> class="bi bi-github"&gt&lt/<span>i</span>&gt</p>
+                        <p id="frente1"> &lt<span>span</span>&gtGithub&lt/<span>span</span>&gt</p>
+                        <p id="frente">&lt/<span>a</span>&gt</p>
+                        <p>&lt/<span>li</span>&gt</p>
+                        <p>&lt<span>li</span> style="--clr:#ff4800"&gt</p>
+                        <p id="frente">&lt<span>a</span> href="#" target="_blank"&gt</p>
+                        <p id="frente1">&lt<span>i</span> class="bi bi-instagram"&gt&lt/<span>i</span>&gt</p>
+                        <p id="frente1">&lt<span>span</span>&gtInstagram&lt/<span>span</span>&gt</p>
+                        <p id="frente">&lt/<span>a</span>&gt</p>
+                        <p>&lt/<span>li</span>&gt</p>
+                        &lt/<span>ul</span>&gt
+                    </div>
+                </div>
+        
+                <div class="codigo-container">
+                    <h1>Codigo <span>CSS.</span></h1>
+                    <div class="codigoCss">
+                        <span>.icones</span> {<br>
+                        position: absolute;<br>
+                        display: flex;<br>
+                        justify-content: center;<br>
+                        align-items: center;<br>
+                        margin-top: 200px;<br>
+                        margin-left: 500px;<br>
+                        }<br>
+                        <br>
+                        <span>.icones li</span> {<br>
+                        position: relative;<br>
+                        list-style: none;<br>
+                        width: 80px;<br>
+                        height: 80px;<br>
+                        display: flex;<br>
+                        justify-content: center;<br>
+                        align-items: center;<br>
+                        cursor: pointer;<br>
+                        transition: .5s;<br>
+                        }<br>
+                        <br>
+                        <span>.icones li::before</span> {<br>
+                        content: "";<br>
+                        position: absolute;<br>
+                        inset: 30px;<br>
+                        box-shadow: 0 0 0 10px var(--clr),<br>
+                        0 0 0 20px var(--bg),<br>
+                        0 0 0 22px var(--clr);<br>
+                        transition: .5s;<br>
+                        }<br>
+                        <br>
+                        <span>.icones li:hover::before</span> {<br>
+                        inset: 15px;<br>
+                        }<br>
+                        <br>
+                        <span>.icones li::after</span> {<br>
+                        content: "";<br>
+                        position: absolute;<br>
+                        inset: 0;<br>
+                        background: var(--bg);<br>
+                        transform: rotate(45deg);<br>
+                        transition: .5s;<br>
+                        }<br>
+                        <br>
+                        <span>.icones li:hover::after</span> {<br>
+                        inset: -10px;<br>
+                        transform: rotate(0deg);<br>
+                        }<br>
+                        <br>
+                        <span>.icones li a</span>{<br>
+                        position: relative;<br>
+                        text-decoration: none;<br>
+                        z-index: 10;<br>
+                        display: flex;<br>
+                        justify-content: center;<br>
+                        align-items: center;<br>
+                        }<br>
+                        
+                        <span>.icones li a i</span> {<br>
+                        font-size: 2em;<br>
+                        transition: .5s;<br>
+                        color: var(--clr);<br>
+                        }<br>
+                        <br>
+                        <span>.icones li:hover a i</span> {<br>
+                        color: var(--clr);<br>
+                        transform: translateY(-40%);<br>
+                        }<br>
+                        <br>
+                        <span>.icones li a span</span> {<br>
+                        position: absolute;<br>
+                        color: var(--clr);<br>
+                        opacity: 0;<br>
+                        transition: .5s;<br>
+                        transform: scale(0) translateY(200%);<br>
+                        }<br>
+                        
+                        <span>.icones li:hover a span</span> {<br>
+                        opacity: 1;<br>
+                        transform: scale(1) translateY(100%);<br>
+                        }<br>
+                        <br>
+                        .icones li:hover a i,<br>
+                        <span>.icones li:hover a span</span> {<br>
+                        filter: drop-shadow(0 0 20px var(--clr)) drop-shadow(0 0 40px var(--clr)) drop-shadow(0 0 60px var(--clr));<br>
+                        }
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="efeito-container">
+            <h1 class="title">Menu</h1>
+            <div class="informacoes">
+                <img src="./img/menu.png" alt="">
+                <img src="./img/menu2.png" alt="">
+            </div>
+            <div class="info">
+                <h1>Menu <span>desktop.</span></h1>
+                <p>Neste efeito só utilizará HTML e CSS, caso a formatação(*) do css estiver overflow: hidden; Mudem o hidden
+                    para 'Auto'.
+                </p>
+            </div>
+            <div class="codigo-box">
+                <div class="codigo-container">
+                    <h1>Codigo <span>HTML.</span></h1>
+                    <div class="codigo">
+                        &lt<span>ul</span> class="Menu3d">
+                        <p>&lt<span>li</span> style="--i:4"><br>&lt<span>a</span> href="#"> Inicio&lt/<span>a</span>><br>&lt/<span>li</span>></p><br>
+                        <p>&lt<span>li</span> style="--i:3"><br>&lt<span>a</span> href="#"> Sobre&lt/<span>a</span>><br>&lt/<span>li</span>></p><br>
+                        <p>&lt<span>li</span> style="--i:2"><br>&lt<span>a</span> href="#"> Projetos&lt/<span>a</span>><br>&lt/<span>li</span>></p><br>
+                        <p>&lt<span>li</span> style="--i:1"><br>&lt<span>a</span> href="#"> Contato&lt/<span>a</span>><br>&lt/<span>li</span>></p>
+                        &lt/<span>ul</span>>
+                    </div>
+                </div>
+        
+                <div class="codigo-container">
+                    <h1>Codigo <span>CSS.</span></h1>
+                    <div class="codigoCss">
+                        <span>.Menu3d</span> {<br>
+                        position: relative;<br>
+                        transform: skewY(-15deg);<br>
+                        transition: 0.5s;<br>
+                        z-index: 999;<br>
+                        margin-top: 200px;<br>
+                        }<br>
+                        <br>
+                        <span>.Menu3d li</span> {<br>
+                        position: relative;<br>
+                        list-style: none;<br>
+                        width: 150px;<br>
+                        background: #0b0c0c;<br>
+                        z-index: var(--i);<br>
+                        transition: 0.5s;<br>
+                        }<br>
+                        <br>
+                        <span>.Menu3d li:hover</span> {<br>
+                        background: #1E90FF;<br>
+                        transform: translateX(20px);<br>
+                        }<br>
+                        <br>
+                        <span>.Menu3d li::before</span> {<br>
+                        content: "";<br>
+                        position: absolute;<br>
+                        top: 0;<br>
+                        left: -30px;<br>
+                        width: 30px;<br>
+                        height: 100%;<br>
+                        background: #070707;<br>
+                        transform-origin: right;<br>
+                        transform: skewY(45deg);<br>
+                        transition: 0.5s;<br>
+                        }<br>
+                        <br>
+                        <span>.Menu3d li:hover::before</span> {<br>
+                        background: #0f2f42;<br>
+                        }<br>
+                        <br>
+                        <span>.Menu3d li::after</span> {<br>
+                        content: "";<br>
+                        position: absolute;<br>
+                        display: flex;<br>
+                        top: -30px;<br>
+                        left: 0;<br>
+                        height: 30px;<br>
+                        width: 100%;<br>
+                        background: #070707;<br>
+                        transform-origin: bottom;<br>
+                        transform: skewX(45deg);<br>
+                        transition: 0.5s;<br>
+                        }<br>
+                        <br>
+                        <span>.Menu3d li:hover::after</span> {<br>
+                        background: #2982b9;<br>
+                        }<br>
+                        <br>
+                        <span>.Menu3d li a</span> {<br>
+                        text-decoration: none;<br>
+                        color: white;<br>
+                        padding: 15px;<br>
+                        height: 40px;<br>
+                        display: block;<br>
+                        text-transform: uppercase;<br>
+                        letter-spacing: 0.05em;<br>
+                        font-size: 14px;<br>
+                        transition: 0.5s;<br>
+                        }<br>
+                        <br>
+                        <span>.Menu3d li:hover a</span> {<br>
+                        color: white;<br>
+                        }<br>
+                        <br>
+                        <span>.Menu3d li:last-child::after</span> {<br>
+                        box-shadow: -100px 110px 20px #00000070;<br>
+                        }
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="./script.js"></script>
+</body>
+</html>
