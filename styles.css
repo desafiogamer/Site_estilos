@@ -461,7 +461,7 @@ body{
 }
 
 @media(max-width: 768px) {
-    .body{
+    body{
         overflow: auto;
     }
 
@@ -487,6 +487,7 @@ body{
 
     .black{
         background: linear-gradient(to right, #000000e1,100%, transparent);
+        min-height: 100vh;
     }
 
     .contact{
