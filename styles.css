@@ -500,6 +500,7 @@ body{
 
     .contact h1{
         font-size: 30px;
+        margin-left: 0;
     }
 
     .contact p{
