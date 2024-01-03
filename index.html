@@ -1,9 +1,13 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=], initial-scale=1.0">
-    <title>Document</title>
+    <meta name="description"content="Quer animações diferentes? Aqui voce encontrara animações inéditas utilizando apenas css e html!!">
+    <meta name="author" content="João vitor gentil da silva">
+    <meta name="Keywords" content="Portfolio,portfolio,vercel,joao vitor,threejs, three-js,programação,css,html,javascript,python,js,php,acessar,algoritmo,algoritmos,ambiente digital,ambientes virtuais,animações,animações,digitais,aplicativo,avanços tecnológicos">
+    <title>Styles | CSS</title>
+    <link rel="shortcut icon" type="image/jpg" href="./img/carro.png" />
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css">
 </head>
@@ -12,14 +16,59 @@
         <div class="icon"><h1>Styles.</h1></div>
         <nav class="navbar">
             <a href="#home" class="BtnHome">Inicio</a>
-            <a href="#" class="Sobre">Efeitos</a>
-            <a href="#">Ajuda</a>
+            <a href="#" class="Sobre">Animações</a>
         </nav>
     </header>
     <section class="home">
-        <div id="container"></div>
+        <div id="cobtainer-box">
+            <div id="container"></div>
+        </div>
         <div id="cursor"></div>
-        <span class="black"></span>
+        <span class="black">
+            <img src="./img/imgeraser.png" alt="">
+            <div class="contact">
+                <h1>Conheça 7 animações feitas com CSS<span>.</span></h1>
+                <p>Algumas da animações que ja utilizei em meus projetos e gostaria de compartilhar com voces. <br>
+                As animações são feita somente com HTML e CSS. <br>
+                Caso queira uma animação propia e criativa, até mesmo 3D, entre em contato atráves do fomulario.</p>
+                <form id="contact-form" method="POST" action="https://formsubmit.co/joaopap1234@gmail.com"
+                    enctype="multipart/form-data">
+                    <input type="hidden" name="_captcha" value="false">
+                    <input type="hidden" name="_next" value="http://127.0.0.1:5500">
+            
+                    <div class="input-box">
+                        <div class="input-field">
+                            <input type="text" name="nome" placeholder="Nome completo" required>
+                        </div>
+            
+                        <div class="input-field">
+                            <input type="email" name="email" placeholder="Endereço de email" required>
+                        </div>
+                    </div>
+            
+                    <div class="input-box">
+                        <div class="input-field">
+                            <input type="text" name="telefone" placeholder="Numero de telefone" required>
+                        </div>
+            
+                        <div class="input-field">
+                            <input type="text" name="assunto_email" placeholder="Assunto do email" required>
+                        </div>
+                    </div>
+            
+                    <div class="textarea-field">
+                        <textarea name="assunto" cols="30" rows="10" placeholder="Sua menssagem" required></textarea>
+                    </div>
+            
+                    <div class="btn">
+                        <button type="submit">
+                            <span class="texto">Enviar</span>
+                            <span class="logo-enviar"><i class="bi bi-arrow-right"></i></span>
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </span>
     </section>
     <section class="About">
         <div class="efeito"></div>
@@ -73,9 +122,7 @@
                         <br>
                         <br>
                         <span>.loading span</span> {<br>
-                        position: absolute;<br>
-                        top: 70px;<br>
-                        left: 180px;<br>
+                        position: relative;<br>
                         width: 5px;<br>
                         height: 41px;<br>
                         transform: rotate(calc(var(--i) * 18deg));<br>
@@ -188,12 +235,10 @@
                     <h1>Codigo <span>CSS.</span></h1>
                     <div class="codigoCss">
                         <span>.icones</span> {<br>
-                        position: absolute;<br>
+                        position: relative;<br>
                         display: flex;<br>
                         justify-content: center;<br>
                         align-items: center;<br>
-                        margin-top: 200px;<br>
-                        margin-left: 500px;<br>
                         }<br>
                         <br>
                         <span>.icones li</span> {<br>
@@ -381,6 +426,1180 @@
                         <br>
                         <span>.Menu3d li:last-child::after</span> {<br>
                         box-shadow: -100px 110px 20px #00000070;<br>
+                        }
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="efeito-container">
+            <h1 class="title">Imagem Hover</h1>
+            <div class="informacoes">
+                <img src="./img/img.png" alt="">
+                <img src="./img/img2.png" alt="">
+            </div>
+            <div class="info">
+                <h1>Efeito Hover<span> 3d em imagem.</span></h1>
+                <p>Neste efeito só utilizará HTML e CSS.</p>
+            </div>
+            <div class="codigo-box">
+                <div class="codigo-container">
+                    <h1>Codigo <span>HTML.</span></h1>
+                    <div class="codigo">
+                        &lt<span>div</span> class="image">
+                        <p>&lt <span>img</span> src="SUA IMAGEM" alt=""></p>
+                        &lt/<span>div</span>>
+                    </div>
+                </div>
+        
+                <div class="codigo-container">
+                    <h1>Codigo <span>CSS.</span></h1>
+                    <div class="codigoCss">
+                        <span>.image</span> {<br>
+                        height: 500px;<br>
+                        width: 650px;<br>
+                        perspective: 800px;<br>
+                        display: flex;<br>
+                        align-items: center;<br>
+                        justify-content: center;<br>
+                        transition: .3s;<br>
+                        }<br>
+                        <br>
+                        <span>.image img</span> {<br>
+                        height: auto;<br>
+                        width: 600px;<br>
+                        position: relative;<br>
+                        transform-style: preserve-3d;<br>
+                        transition: .3s;<br>
+                        box-shadow: 10px 10px 10px black;<br>
+                        }<br>
+                        <br>
+                        <span>.image img:hover</span> {<br>
+                        transform: rotateY(-25deg) translateY(15px);<br>
+                        box-shadow: 10px 20px 20px black<br>
+                        }
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="efeito-container">
+            <h1 class="title">Carro</h1>
+            <div class="informacoes">
+                <img src="./img/carro.png" alt="">
+                <img src="./img/carro2.png" alt="">
+            </div>
+            <div class="info">
+                <h1>Efeito de carro<span> andando.</span></h1>
+                <p>Neste efeito só utilizará HTML e CSS.</p>
+            </div>
+            <div class="codigo-box">
+                <div class="codigo-container">
+                    <h1>Codigo <span>HTML.</span></h1>
+                    <div class="codigo">
+                        &lt<span>div</span> class="pista">
+                        <p>&lt<span>div</span> class="carro"></p>
+                        <p id="frente">&lt<span>div</span> class="molde"></p>
+                        <p id="frente1">&lt<span>div</span> class="farol">&lt/<span>div</span>></p>
+                        <p id="frente">&lt/<span>div</span>></p>
+                        <p id="frente">&lt<span>div</span> class="teto"></p>
+                        <p id="frente1">&lt<span>div</span> class="janela">&lt/<span>div</span>></p>
+                        <p id="frente">&lt/<span>div</span>></p>
+                        <p id="frente">&lt<span>div</span> class="roda1"></p>
+                        <p id="frente1">&lt<span>div</span>class="aro1">&lt/<span>div</span>></p>
+                        <p id="frente1">&lt<span>div</span> class="aro2">&lt/<span>div</span>></p>
+                        <p id="frente">&lt/<span>div</span>></p>
+                        <p id="frente">&lt<span>div</span> class="roda2"></p>
+                        <p id="frente1">&lt<span>div</span> class="aro3">&lt/<span>div</span>></p>
+                        <p id="frente1">&lt<span>div</span> class="aro4">&lt/<span>div</span>></p>
+                        <p id="frente">&lt/<span>div</span>></p>
+                        <p id="frente">&lt<span>div</span> class="porta"></p>
+                        <p id="frente1">&lt<span>div</span> class="macaneta">&lt/<span>div</span>></p>
+                        <p id="frente">&lt/<span>div</span>></p>
+                        <p id="frente">&lt<span>div</span> class="luz">&lt/<span>div</span>></p>
+                        <p>&lt/<span>div</span>></p>
+                        &lt/<span>div</span>>
+                    </div>
+                </div>
+        
+                <div class="codigo-container">
+                    <h1>Codigo <span>CSS.</span></h1>
+                    <div class="codigoCss">
+                        <span>.pista</span> {<br>
+                        position: relative;<br>
+                        width: 100%;<br>
+                        height: 70px;<br>
+                        margin-bottom: 20px;<br>
+                        border-bottom: 2px solid greenyellow;<br>
+                        overflow: hidden;<br>
+                        }<br>
+                        <br>
+                        <span>.carro</span> {<br>
+                        position: absolute;<br>
+                        width: 120px;<br>
+                        height: 90%;<br>
+                        bottom: 0;<br>
+                        animation: movimento-carro 6s linear infinite;<br>
+                        transition: 6s;<br>
+                        }<br>
+                        <br>
+                        <span>.molde</span> {<br>
+                        position: absolute;<br>
+                        margin-top: 18px;<br>
+                        width: 80%;<br>
+                        background: #5f5f5f;<br>
+                        height: 28px;<br>
+                        border-radius: 4px;<br>
+                        border-bottom: 2px solid black;<br>
+                        border-top: 1px solid black;<br>
+                        border-left: 1px solid black;<br>
+                        overflow: hidden;<br>
+                        }<br>
+                        <br>
+                        <span>.farol</span> {<br>
+                        position: absolute;<br>
+                        width: 10px;<br>
+                        height: 10px;<br>
+                        right: -3px;<br>
+                        background-color: greenyellow;<br>
+                        border-radius: 3px;<br>
+                        border: 1px solid black;<br>
+                        }<br>
+                        <br>
+                        <span>.porta</span> {<br>
+                        position: absolute;<br>
+                        width: 20px;<br>
+                        height: 28px;<br>
+                        background: #3d3d3d;<br>
+                        border: 2px solid black;<br>
+                        margin-top: 18px;<br>
+                        margin-left: 32px;<br>
+                        }<br>
+                        <br>
+                        <span>.macaneta</span> {<br>
+                        position: absolute;<br>
+                        background: black;<br>
+                        height: 2px;<br>
+                        width: 8px;<br>
+                        margin-top: 10px;<br>
+                        }<br>
+                        <br>
+                        <span>.teto</span> {<br>
+                        position: absolute;<br>
+                        width: 40%;<br>
+                        height: 18px;<br>
+                        margin-left: 15px;<br>
+                        background: transparent;<br>
+                        border: 3px solid black;<br>
+                        border-bottom: none;<br>
+                        border-radius: 5px;<br>
+                        z-index: -1;<br>
+                        }<br>
+                        <br>
+                        <span>.janela</span> {<br>
+                        position: absolute;<br>
+                        width: 2px;<br>
+                        height: 18px;<br>
+                        background-color: black;<br>
+                        margin-left: 20px;<br>
+                        }<br>
+                        <br>
+                        <span>.roda1</span> {<br>
+                        position: absolute;<br>
+                        display: flex;<br>
+                        justify-content: center;<br>
+                        align-items: center;<br>
+                        bottom: 0;<br>
+                        left: 5px;<br>
+                        width: 20px;<br>
+                        height: 20px;<br>
+                        border-radius: 50%;<br>
+                        border: 5px solid black;<br>
+                        background: #797979;<br>
+                        }<br>
+                        <br>
+                        <span>.roda2</span> {<br>
+                        position: absolute;<br>
+                        display: flex;<br>
+                        justify-content: center;<br>
+                        align-items: center;<br>
+                        bottom: 0;<br>
+                        right: 28px;<br>
+                        width: 20px;<br>
+                        height: 20px;<br>
+                        border-radius: 50%;<br>
+                        background: #797979;<br>
+                        border: 5px solid black;<br>
+                        }<br>
+                        <br>
+                        <span>.aro1</span> {<br>
+                        position: absolute;<br>
+                        height: 100%;<br>
+                        width: 2px;<br>
+                        background-color: black;<br>
+                        animation: girar .6s linear infinite;<br>
+                        }<br>
+                        <br>
+                        <span>.aro2</span> {<br>
+                        position: absolute;<br>
+                        height: 2px;<br>
+                        width: 100%;<br>
+                        background-color: black;<br>
+                        animation: girar .6s linear infinite;<br>
+                        }<br>
+                        <br>
+                        <span>.aro3</span>{<br>
+                        position: absolute;<br>
+                        height: 2px;<br>
+                        width: 100%;<br>
+                        background-color: black;<br>
+                        animation: girar .6s linear infinite;<br>
+                        }<br>
+                        <br>
+                        <span>.aro4</span> {<br>
+                        position: absolute;<br>
+                        height: 100%;<br>
+                        width: 2px;<br>
+                        background-color: black;<br>
+                        animation: girar .6s linear infinite;<br>
+                        }<br>
+                        <br>
+                        <span>.luz</span> {<br>
+                        pointer-events: none;<br>
+                        content: "";<br>
+                        position: absolute;<br>
+                        width: 20px;<br>
+                        height: 50px;<br>
+                        background: greenyellow;<br>
+                        right: 0;<br>
+                        transform: perspective(64px) rotateX(40deg) scale(1, 0.35);<br>
+                        filter: blur(10px);<br>
+                        opacity: 0, 7;<br>
+                        }<br>
+                        <br>
+                        <span>@keyframes movimento-carro</span> {<br>
+                        <span>0%</span> {<br>
+                        left: -100px;<br>
+                        }<br>
+                        
+                        <span>100%</span> {<br>
+                        left: 100%;<br>
+                        }<br>
+                        }<br>
+                        <br>
+                        <span>@keyframes girar</span> {<br>
+                        <span>0%</span> {<br>
+                        transform: rotate(0);<br>
+                        }<br>
+                        <br>
+                        <span>100%</span> {<br>
+                        transform: rotate(360deg);<br>
+                        }<br>
+                        }
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="efeito-container">
+            <h1 class="title">DNA</h1>
+            <div class="informacoes">
+                <img src="./img/dna.png" alt="">
+                <img src="./img/dna2.png" alt="">
+            </div>
+            <div class="info">
+                <h1>Efeito de<span> DNA.</span></h1>
+                <p>Neste efeito só utilizará HTML e CSS.</p>
+            </div>
+            <div class="codigo-box">
+                <div class="codigo-container">
+                    <h1>Codigo <span>HTML.</span></h1>
+                    <div class="codigo">
+                        &lt<span>div</span> class="wrapper">
+                        <p>&lt<span>div</span> class="line line1"></p>
+                        <p id="frente">&lt<span>span</span> class="circle circle-top">&lt/<span>span</span>></p>
+                        <p id="frente">&lt<span>div</span> class="dotted"></p>
+                        <p id="frente1">&lt<span>span</span> class="dot dot-top">&lt/<span>span</span>></p>
+                        <p id="frente1">&lt<span>span</span> class="dot dot-middle-top">&lt/<span>span</span>></p>
+                        <p id="frente1">&lt<span>span</span> class="dot dot-middle-bottom">&lt/<span>span</span>></p>
+                        <p id="frente1">&lt<span>span</span> class="dot dot-bottom">&lt/<span>span</span>></p>
+                        <p id="frente">&lt/<span>div</span>></p>
+                        <p>&lt<span>span</span> class="circle circle-bottom">&lt/<span>span</span>></p>
+                        <p>&lt/<span>div</span>></p>
+                        <p>&lt<span>div</span> class="line line2"></p>
+                        <p id="frente">&lt<span>span</span> class="circle circle-top">&lt/<span>span</span>></p>
+                        <p id="frente">&lt<span>div</span> class="dotted"></p>
+                        <p id="frente1">&lt<span>span</span> class="dot dot-top">&lt/<span>span</span>></p>
+                        <p id="frente1">&lt<span>span</span> class="dot dot-middle-top">&lt/<span>span</span>></p>
+                        <p id="frente1">&lt<span>span</span> class="dot dot-middle-bottom">&lt/<span>span</span>></p>
+                        <p id="frente1">&lt<span>span</span> class="dot dot-bottom">&lt/<span>span</span>></p>
+                        <p id="frente">&lt/<span>div</span>></p>
+                        <p id="frente">&lt<span>span</span> class="circle circle-bottom">&lt/<span>span</span>></p>
+                        <p>&lt/<span>div</span>></p>
+                        <p>&lt<span>div</span> class="line line3"></p>
+                        <p id="frente">&lt<span>span</span> class="circle circle-top">&lt/<span>span</span>></p>
+                        <p id="frente">&lt <span>div</span> class="dotted"></p>
+                        <p id="frente1">&lt<span>span</span> class="dot dot-top">&lt/<span>span</span>></p>
+                        <p id="frente1">&lt<span>span</span> class="dot dot-middle-top">&lt/<span>span</span>></p>
+                        <p id="frente1">&lt<span>span</span> class="dot dot-middle-bottom">&lt/<span>span</span>></p>
+                        <p id="frente1">&lt<span>span</span> class="dot dot-bottom">&lt/<span>span</span>></p>
+                        <p id="frente">&lt/<span>div</span>></p>
+                        <p id="frente">&lt<span>span</span> class="circle circle-bottom">&lt/<span>span</span>></p>
+                        <p>&lt/<span>div</span>></p>
+                        <p>&lt<span>div</span> class="line line4"></p>
+                        <p id="frente">&lt<span>span</span> class="circle circle-top">&lt/<span>span</span>></p>
+                        <p id="frente">&lt<span>div</span> class="dotted"></p>
+                        <p id="frente1">&lt<span>span</span> class="dot dot-top">&lt/<span>span</span>></p>
+                        <p id="frente1">&lt<span>span</span> class="dot dot-middle-top">&lt/<span>span</span>></p>
+                        <p id="frente1">&lt<span>span</span> class="dot dot-middle-bottom">&lt/<span>span</span>></p>
+                        <p id="frente1">&lt<span>span</span> class="dot dot-bottom">&lt/<span>span</span>></p>
+                        <p id="frente">&lt/<span>div</span>></p>
+                        <p id="frente">&lt<span>span</span> class="circle circle-bottom">&lt/<span>span</span>></p>
+                        <p>&lt/<span>div</span>></p>
+                        <p>&lt<span>div</span> class="line line5"></p>
+                        <p id="frente">&lt<span>span</span> class="circle circle-top">&lt/<span>span</span>></p>
+                        <p id="frente">&lt<span>div</span> class="dotted"></p>
+                        <p id="frente1">&lt<span>span</span> class="dot dot-top">&lt/<span>span</span>></p>
+                        <p id="frente1">&lt<span>span</span> class="dot dot-middle-top">&lt/<span>span</span>></p>
+                        <p id="frente1">&lt<span>span</span> class="dot dot-middle-bottom">&lt/<span>span</span>></p>
+                        <p id="frente1">&lt<span>span</span> class="dot dot-bottom">&lt/<span>span</span>></p>
+                        <p id="frente">&lt/<span>div</span>></p>
+                        <p id="frente">&lt<span>span</span> class="circle circle-bottom">&lt/<span>span</span>></p>
+                        <p>&lt/<span>div</span>></p>
+                        <p>&lt<span>div</span> class="line line6"></p>
+                        <p id="frente">&lt<span>span</span> class="circle circle-top">&lt/<span>span</span>></p>
+                        <p id="frente">&lt<span>div</span> class="dotted"></p>
+                        <p id="frente1">&lt<span>span</span> class="dot dot-top">&lt/<span>span</span>></p>
+                        <p id="frente1">&lt<span>span</span> class="dot dot-middle-top">&lt/<span>span</span>></p>
+                        <p id="frente1">&lt<span>span</span> class="dot dot-middle-bottom">&lt/<span>span</span>></p>
+                        <p id="frente1">&lt<span>span</span> class="dot dot-bottom">&lt/<span>span</span>></p>
+                        <p id="frente">&lt/<span>div</span>></p>
+                        <p id="frente">&lt<span>span</span> class="circle circle-bottom">&lt/<span>span</span>></p>
+                        <p>&lt/<span>div</span>></p>
+                        <p>&lt<span>div</span> class="line line7"></p>
+                        <p id="frente">&lt<span>span</span> class="circle circle-top">&lt/<span>span</span>></p>
+                        <p id="frente">&lt<span>div</span> class="dotted"></p>
+                        <p id="frente1">&lt<span>span</span> class="dot dot-top">&lt/<span>span</span>></p>
+                        <p id="frente1">&lt<span>span</span> class="dot dot-middle-top">&lt/<span>span</span>></p>
+                        <p id="frente1">&lt<span>span</span> class="dot dot-middle-bottom">&lt/<span>span</span>></p>
+                        <p id="frente1">&lt<span>span</span> class="dot dot-bottom">&lt/<span>span</span>></p>
+                        <p id="frente">&lt/<span>div</span>></p>
+                        <p id="frente">&lt<span>span</span> class="circle circle-bottom">&lt/<span>span</span>></p>
+                        <p>&lt/<span>div></p>
+                        <p>&lt<span>div</span> class="line line8"></p>
+                        <p id="frente">&lt<span>span</span> class="circle circle-top">&lt/<span>span</span>></p>
+                        <p id="frente">&lt<span>div</span> class="dotted"></p>
+                        <p id="frente1">&lt<span>span</span> class="dot dot-top">&lt/<span>span</span>></p>
+                        <p id="frente1">&lt<span>span</span> class="dot dot-middle-top">&lt/<span>span</span>></p>
+                        <p id="frente1">&lt<span>span</span> class="dot dot-middle-bottom">&lt/<span>span</span>></p>
+                        <p id="frente1">&lt<span>span</span> class="dot dot-bottom">&lt/<span>span</span>></p>
+                        <p id="frente">&lt/<span>div</span>></p>
+                        <p id="frente">&lt<span>span</span> class="circle circle-bottom">&lt/<span>span</span>></p>
+                        <p>&lt/<span>div</span>></p>
+                        <p>&lt<span>div</span> class="line line9"></p>
+                        <p id="frente">&lt<span>span</span> class="circle circle-top">&lt/<span>span</span>></p>
+                        <p id="frente">&lt<span>div</span> class="dotted"></p>
+                        <p id="frente1">&lt<span>span</span> class="dot dot-top">&lt/<span>span</span>></p>
+                        <p id="frente1">&lt<span>span</span> class="dot dot-middle-top">&lt/<span>span</span>></p>
+                        <p id="frente1">&lt<span>span</span> class="dot dot-middle-bottom">&lt/<span>span</span>></p>
+                        <p id="frente1">&lt<span>span</span> class="dot dot-bottom">&lt/<span>span</span>></p>
+                        <p id="frente">&lt/<span>div</span>></p>
+                        <p id="frente">&lt<span>span</span> class="circle circle-bottom">&lt/<span>span</span>></p>
+                        <p>&lt/<span>div</span>></p>
+                        <p>&lt<span>div</span> class="line line10"></p>
+                        <p id="frente">&lt<span>span</span> class="circle circle-top">&lt/<span>span</span>></p>
+                        <p id="frente">&lt<span>div</span> class="dotted"></p>
+                        <p id="frente1">&lt<span>span</span> class="dot dot-top">&lt/<span>span</span>></p>
+                        <p id="frente1">&lt<span>span</span> class="dot dot-middle-top">&lt/<span>span</span>></p>
+                        <p id="frente1">&lt<span>span</span> class="dot dot-middle-bottom">&lt/<span>span</span>></p>
+                        <p id="frente1">&lt<span>span</span> class="dot dot-bottom">&lt/<span>span</span>></p>
+                        <p id="frente">&lt/<span>div</span>></p>
+                        <p id="frente">&lt<span>span</span> class="circle circle-bottom">&lt/<span>span</span>></p>
+                        <p>&lt/<span>div></p>
+                        <p>&lt<span>div</span> class="line line11"></p>
+                        <p id="frente">&lt<span>span</span> class="circle circle-top">&lt/<span>span</span>></p>
+                        <p id="frente">&lt<span>div</span> class="dotted"></p>
+                        <p id="frente1">&lt<span>span</span> class="dot dot-top">&lt/<span>span</span>></p>
+                        <p id="frente1">&lt<span>span</span> class="dot dot-middle-top">&lt/<span>span</span>></p>
+                        <p id="frente1">&lt<span>span</span> class="dot dot-middle-bottom">&lt/<span>span</span>></p>
+                        <p id="frente1">&lt<span>span</span> class="dot dot-bottom">&lt/<span>span</span>></p>
+                        <p id="frente">&lt/<span>div</span>></p>
+                        <p id="frente">&lt<span>span</span> class="circle circle-bottom">&lt/<span>span</span>></p>
+                        <p>&lt/<span>div</span>></p>
+                        &lt/<span>div</span>>
+                    </div>
+                </div>
+        
+                <div class="codigo-container">
+                    <h1>Codigo <span>CSS.</span></h1>
+                    <div class="codigoCss">
+                        <span>.wrapper</span> {<br>
+                        position: absolute;<br>
+                        float: left;<br>
+                        margin: 140px 100px;<br>
+                        }<br>
+                        <br>
+                        <span>.line</span> {<br>
+                        position: absolute;<br>
+                        top: 0px;<br>
+                        width: 2px;<br>
+                        height: 8px;<br>
+                        background-color: red;<br>
+                        }<br>
+                        <br>
+                        <span>.circle</span> {<br>
+                        position: absolute;<br>
+                        display: block;<br>
+                        width: 8px;<br>
+                        height: 8px;<br>
+                        border-radius: 50%;<br>
+                        background-color: blue;<br>
+                        }<br>
+                        <br>
+                        <span>.circle-top</span> {<br>
+                        top: 0px;<br>
+                        left: -3.5px;<br>
+                        }<br>
+                        <br>
+                        <span>.circle-bottom</span> {<br>
+                        bottom: 0px;<br>
+                        left: -3.5px;<br>
+                        }<br>
+                        <br>
+                        <span>.dot</span> {<br>
+                        position: absolute;<br>
+                        display: block;<br>
+                        width: 4px;<br>
+                        height: 4px;<br>
+                        border-radius: 50%;<br>
+                        left: -1.5px;<br>
+                        }<br>
+                        <br>
+                        <span>.line1</span> {<br>
+                        margin-left: 0px;<br>
+                        background-color: #2410CB;<br>
+                        -webkit-animation: line 2s cubic-bezier(0.250, 0, 0.705, 1) infinite;<br>
+                        animation: line 2s cubic-bezier(0.250, 0, 0.705, 1) infinite;<br>
+                        }<br>
+                        <br>
+                        <span>.line1>span</span> {<br>
+                        background-color: #D4141E;<br>
+                        }<br>
+                        <br>
+                        <span>.line1>.dotted>.dot</span> {<br>
+                        background-color: #D4141E;<br>
+                        }<br>
+                        <br>
+                        <span>.line1>.dotted>.dot-top</span> {<br>
+                        top: 0px;<br>
+                        -webkit-animation: dot-top 2s cubic-bezier(0.250, 0, 0.705, 1) infinite;<br>
+                        animation: dot-top 2s cubic-bezier(0.250, 0, 0.705, 1) infinite;<br>
+                        }<br>
+                        <br>
+                        <span>.line1>.dotted>.dot-bottom</span> {<br>
+                        bottom: 0px;<br>
+                        -webkit-animation: dot-bottom 2s cubic-bezier(0.250, 0, 0.705, 1) infinite;<br>
+                        animation: dot-bottom 2s cubic-bezier(0.250, 0, 0.705, 1) infinite;<br>
+                        }<br>
+                        <br>
+                        <span>.line1>.dotted>.dot-middle-top</span> {<br>
+                        top: 0px;<br>
+                        -webkit-animation: dot-middle-top 2s cubic-bezier(0.250, 0, 0.705, 1) infinite;<br>
+                        animation: dot-middle-top 2s cubic-bezier(0.250, 0, 0.705, 1) infinite;<br>
+                        }<br>
+                        <br>
+                        <span>.line1>.dotted>.dot-middle-bottom</span> {<br>
+                        bottom: 0px;<br>
+                        -webkit-animation: dot-middle-bottom 2s cubic-bezier(0.250, 0, 0.705, 1) infinite;<br>
+                        animation: dot-middle-bottom 2s cubic-bezier(0.250, 0, 0.705, 1) infinite;<br>
+                        }<br>
+                        <br>
+                        <span>.line2</span> {<br>
+                        margin-left: 35px;<br>
+                        background-color: #852DF4;<br>
+                        -webkit-animation: line 2s cubic-bezier(0.250, 0, 0.705, 1) .05s infinite;<br>
+                        animation: line 2s cubic-bezier(0.250, 0, 0.705, 1) .05s infinite;<br>
+                        }<br>
+                        <br>
+                        <span>.line2>span</span> {<br>
+                        background-color: #FC7E48;<br>
+                        }<br>
+                        <br>
+                        <span>.line2>.dotted>.dot</span> {<br>
+                        background-color: #FC7E48;<br>
+                        }<br>
+                        <br>
+                        <span>.line2>.dotted>.dot-top</span> {<br>
+                        top: 0px;<br>
+                        -webkit-animation: dot-top 2s cubic-bezier(0.250, 0, 0.705, 1) .05s infinite;<br>
+                        animation: dot-top 2s cubic-bezier(0.250, 0, 0.705, 1) .05s infinite;<br>
+                        }<br>
+                        <br>
+                        <span>.line2>.dotted>.dot-bottom</span> {<br>
+                        bottom: 0px;<br>
+                        -webkit-animation: dot-bottom 2s cubic-bezier(0.250, 0, 0.705, 1) .05s infinite;<br>
+                        animation: dot-bottom 2s cubic-bezier(0.250, 0, 0.705, 1) .05s infinite;<br>
+                        }<br>
+                        <br>
+                        <span>.line2>.dotted>.dot-middle-top</span> {<br>
+                        top: 0px;<br>
+                        -webkit-animation: dot-middle-top 2s cubic-bezier(0.250, 0, 0.705, 1) .05s infinite;<br>
+                        animation: dot-middle-top 2s cubic-bezier(0.250, 0, 0.705, 1) .05s infinite;<br>
+                        }<br>
+                        <br>
+                        <span>.line2>.dotted>.dot-middle-bottom</span> {<br>
+                        bottom: 0px;<br>
+                        -webkit-animation: dot-middle-bottom 2s cubic-bezier(0.250, 0, 0.705, 1) .05s infinite;<br>
+                        animation: dot-middle-bottom 2s cubic-bezier(0.250, 0, 0.705, 1) .05s infinite;<br>
+                        }<br>
+                        <br>
+                        <span>.line3</span> {<br>
+                        margin-left: 70px;<br>
+                        background-color: #F42DF1;<br>
+                        -webkit-animation: line 2s cubic-bezier(0.250, 0, 0.705, 1) .1s infinite;<br>
+                        animation: line 2s cubic-bezier(0.250, 0, 0.705, 1) .1s infinite;<br>
+                        }<br>
+                        <br>
+                        <span>.line3>span</span> {<br>
+                        background-color: #EDEB29;<br>
+                        }<br>
+                        <br>
+                        <span>.line3>.dotted>.dot</span> {<br>
+                        background-color: #EDEB29;<br>
+                        }<br>
+                        <br>
+                        <span>.line3>.dotted>.dot-top</span> {<br>
+                        top: 0px;<br>
+                        -webkit-animation: dot-top 2s cubic-bezier(0.250, 0, 0.705, 1) .1s infinite;<br>
+                        animation: dot-top 2s cubic-bezier(0.250, 0, 0.705, 1) .1s infinite;<br>
+                        }<br>
+                        <br>
+                        <span>.line3>.dotted>.dot-bottom</span> {<br>
+                        bottom: 0px;<br>
+                        -webkit-animation: dot-bottom 2s cubic-bezier(0.250, 0, 0.705, 1) .1s infinite;<br>
+                        animation: dot-bottom 2s cubic-bezier(0.250, 0, 0.705, 1) .1s infinite;<br>
+                        }<br>
+                        <br>
+                        <span>.line3>.dotted>.dot-middle-top</span> {<br>
+                        top: 0px;<br>
+                        -webkit-animation: dot-middle-top 2s cubic-bezier(0.250, 0, 0.705, 1) .1s infinite;<br>
+                        animation: dot-middle-top 2s cubic-bezier(0.250, 0, 0.705, 1) .1s infinite;<br>
+                        }<br>
+                        <br>
+                        <span>.line3>.dotted>.dot-middle-bottom</span> {<br>
+                        bottom: 0px;<br>
+                        -webkit-animation: dot-middle-bottom 2s cubic-bezier(0.250, 0, 0.705, 1) .1s infinite;<br>
+                        animation: dot-middle-bottom 2s cubic-bezier(0.250, 0, 0.705, 1) .1s infinite;<br>
+                        }<br>
+                        <br>
+                        <span>.line4</span> {<br>
+                        margin-left: 105px;<br>
+                        background-color: #F91396;<br>
+                        -webkit-animation: line 2s cubic-bezier(0.250, 0, 0.705, 1) .15s infinite;<br>
+                        animation: line 2s cubic-bezier(0.250, 0, 0.705, 1) .15s infinite;<br>
+                        }<br>
+                        <br>
+                        <span>.line4>span</span> {<br>
+                        background-color: #ACED29;<br>
+                        }<br>
+                        <br>
+                        <span>.line4>.dotted>.dot</span> {<br>
+                        background-color: #ACED29;<br>
+                        }<br>
+                        <br>
+                        <span>.line4>.dotted>.dot-top</span> {<br>
+                        top: 0px;<br>
+                        -webkit-animation: dot-top 2s cubic-bezier(0.250, 0, 0.705, 1) .15s infinite;<br>
+                        animation: dot-top 2s cubic-bezier(0.250, 0, 0.705, 1) .15s infinite;<br>
+                        }<br>
+                        <br>
+                        <span>.line4>.dotted>.dot-bottom</span> {<br>
+                        bottom: 0px;<br>
+                        -webkit-animation: dot-bottom 2s cubic-bezier(0.250, 0, 0.705, 1) .15s infinite;<br>
+                        animation: dot-bottom 2s cubic-bezier(0.250, 0, 0.705, 1) .15s infinite;<br>
+                        }<br>
+                        <br>
+                        <span>.line4>.dotted>.dot-middle-top</span> {<br>
+                        top: 0px;<br>
+                        -webkit-animation: dot-middle-top 2s cubic-bezier(0.250, 0, 0.705, 1) .15s infinite;<br>
+                        animation: dot-middle-top 2s cubic-bezier(0.250, 0, 0.705, 1) .15s infinite;<br>
+                        }<br>
+                        <br>
+                        <span>.line4>.dotted>.dot-middle-bottom</span> {<br>
+                        bottom: 0px;<br>
+                        -webkit-animation: dot-middle-bottom 2s cubic-bezier(0.250, 0, 0.705, 1) .15s infinite;<br>
+                        animation: dot-middle-bottom 2s cubic-bezier(0.250, 0, 0.705, 1) .15s infinite;<br>
+                        }<br>
+                        <br>
+                        <span>.line5</span> {<br>
+                        margin-left: 140px;<br>
+                        background-color: #D4141E;<br>
+                        -webkit-animation: line 2s cubic-bezier(0.250, 0, 0.705, 1) .2s infinite;<br>
+                        animation: line 2s cubic-bezier(0.250, 0, 0.705, 1) .2s infinite;<br>
+                        }
+                        
+                        <span>.line5>span</span>{<br>
+                        background-color: #4EF02B;<br>
+                        }<br>
+                        <br>
+                        <span>.line5>.dotted>.dot</span> {<br>
+                        background-color: #4EF02B;<br>
+                        }<br>
+                        <br>
+                        <span>.line5>.dotted>.dot-top</span> {<br>
+                        top: 0px;<br>
+                        -webkit-animation: dot-top 2s cubic-bezier(0.250, 0, 0.705, 1) .2s infinite;<br>
+                        animation: dot-top 2s cubic-bezier(0.250, 0, 0.705, 1) .2s infinite;<br>
+                        }<br>
+                        <br>
+                        <span>.line5>.dotted>.dot-bottom</span> {<br>
+                        bottom: 0px;<br>
+                        -webkit-animation: dot-bottom 2s cubic-bezier(0.250, 0, 0.705, 1) .2s infinite;<br>
+                        animation: dot-bottom 2s cubic-bezier(0.250, 0, 0.705, 1) .2s infinite;<br>
+                        }<br>
+                        <br>
+                        <span>.line5>.dotted>.dot-middle-top</span> {<br>
+                        top: 0px;<br>
+                        -webkit-animation: dot-middle-top 2s cubic-bezier(0.250, 0, 0.705, 1) .2s infinite;<br>
+                        animation: dot-middle-top 2s cubic-bezier(0.250, 0, 0.705, 1) .2s infinite;<br>
+                        }<br>
+                        <br>
+                        <span>.line5>.dotted>.dot-middle-bottom</span> {<br>
+                        bottom: 0px;<br>
+                        -webkit-animation: dot-middle-bottom 2s cubic-bezier(0.250, 0, 0.705, 1) .2s infinite;<br>
+                        animation: dot-middle-bottom 2s cubic-bezier(0.250, 0, 0.705, 1) .2s infinite;<br>
+                        }<br>
+                        <br>
+                        <span>.line6 </span>{<br>
+                        margin-left: 175px;<br>
+                        background-color: #FC7E48;<br>
+                        -webkit-animation: line 2s cubic-bezier(0.250, 0, 0.705, 1) .25s infinite;<br>
+                        animation: line 2s cubic-bezier(0.250, 0, 0.705, 1) .25s infinite;<br>
+                        }<br>
+                        <br>
+                        <span>.line6>span</span> {<br>
+                        background-color: #38E790;<br>
+                        }<br>
+                        <br>
+                        <span>.line6>.dotted>.dot</span> {<br>
+                        background-color: #38E790;<br>
+                        }<br>
+                        <br>
+                        <span>.line6>.dotted>.dot-top</span> {<br>
+                        top: 0px;<br>
+                        -webkit-animation: dot-top 2s cubic-bezier(0.250, 0, 0.705, 1) .25s infinite;<br>
+                        animation: dot-top 2s cubic-bezier(0.250, 0, 0.705, 1) .25s infinite;<br>
+                        }<br>
+                        <br>
+                        <span>.line6>.dotted>.dot-bottom</span> {<br>
+                        bottom: 0px;<br>
+                        -webkit-animation: dot-bottom 2s cubic-bezier(0.250, 0, 0.705, 1) .25s infinite;<br>
+                        animation: dot-bottom 2s cubic-bezier(0.250, 0, 0.705, 1) .25s infinite;<br>
+                        }<br>
+                        <br>
+                        <span>.line6>.dotted>.dot-middle-top</span> {<br>
+                        top: 0px;<br>
+                        -webkit-animation: dot-middle-top 2s cubic-bezier(0.250, 0, 0.705, 1) .25s infinite;<br>
+                        animation: dot-middle-top 2s cubic-bezier(0.250, 0, 0.705, 1) .25s infinite;<br>
+                        }<br>
+                        <br>
+                        <span>.line6>.dotted>.dot-middle-bottom</span> {<br>
+                        bottom: 0px;<br>
+                        -webkit-animation: dot-middle-bottom 2s cubic-bezier(0.250, 0, 0.705, 1) .25s infinite;<br>
+                        animation: dot-middle-bottom 2s cubic-bezier(0.250, 0, 0.705, 1) .25s infinite;<br>
+                        }<br>
+                        <br>
+                        <span>.line7</span> {<br>
+                        margin-left: 210px;<br>
+                        background-color: #EDEB29;<br>
+                        -webkit-animation: line 2s cubic-bezier(0.250, 0, 0.705, 1) .3s infinite;<br>
+                        animation: line 2s cubic-bezier(0.250, 0, 0.705, 1) .3s infinite;<br>
+                        }<br>
+                        <br>
+                        <span>.line7>span</span> {<br>
+                        background-color: #25EACC;<br>
+                        }<br>
+                        <br>
+                        <span>.line7>.dotted>.dot</span> {<br>
+                        background-color: #25EACC;<br>
+                        }<br>
+                        <br>
+                        <span>.line7>.dotted>.dot-top</span> {<br>
+                        top: 0px;<br>
+                        -webkit-animation: dot-top 2s cubic-bezier(0.250, 0, 0.705, 1) .3s infinite;<br>
+                        animation: dot-top 2s cubic-bezier(0.250, 0, 0.705, 1) .3s infinite;<br>
+                        }<br>
+                        <br>
+                        <span>.line7>.dotted>.dot-bottom</span> {<br>
+                        bottom: 0px;<br>
+                        -webkit-animation: dot-bottom 2s cubic-bezier(0.250, 0, 0.705, 1) .3s infinite;<br>
+                        animation: dot-bottom 2s cubic-bezier(0.250, 0, 0.705, 1) .3s infinite;<br>
+                        }<br>
+                        <br>
+                        <span>.line7>.dotted>.dot-middle-top</span> {<br>
+                        top: 0px;<br>
+                        -webkit-animation: dot-middle-top 2s cubic-bezier(0.250, 0, 0.705, 1) .3s infinite;<br>
+                        animation: dot-middle-top 2s cubic-bezier(0.250, 0, 0.705, 1) .3s infinite;<br>
+                        }<br>
+                        <br>
+                        <span>.line7>.dotted>.dot-middle-bottom </span>{<br>
+                        bottom: 0px;<br>
+                        -webkit-animation: dot-middle-bottom 2s cubic-bezier(0.250, 0, 0.705, 1) .3s infinite;<br>
+                        animation: dot-middle-bottom 2s cubic-bezier(0.250, 0, 0.705, 1) .3s infinite;<br>
+                        }<br>
+                        <br>
+                        <span>.line8</span> {<br>
+                        margin-left: 245px;<br>
+                        background-color: #ACED29;<br>
+                        -webkit-animation: line 2s cubic-bezier(0.250, 0, 0.705, 1) .35s infinite;<br>
+                        animation: line 2s cubic-bezier(0.250, 0, 0.705, 1) .35s infinite;<br>
+                        }<br>
+                        <br>
+                        <span>.line8>span</span> {<br>
+                        background-color: #309CDF;<br>
+                        }<br>
+                        <br>
+                        <span>.line8>.dotted>.dot</span> {<br>
+                        background-color: #309CDF;<br>
+                        }<br>
+                        <br>
+                        <span>.line8>.dotted>.dot-top</span> {<br>
+                        top: 0px;<br>
+                        -webkit-animation: dot-top 2s cubic-bezier(0.250, 0, 0.705, 1) .35s infinite;<br>
+                        animation: dot-top 2s cubic-bezier(0.250, 0, 0.705, 1) .35s infinite;<br>
+                        }<br>
+                        <br>
+                        <span>.line8>.dotted>.dot-bottom</span> {<br>
+                        bottom: 0px;<br>
+                        -webkit-animation: dot-bottom 2s cubic-bezier(0.250, 0, 0.705, 1) .35s infinite;<br>
+                        animation: dot-bottom 2s cubic-bezier(0.250, 0, 0.705, 1) .35s infinite;<br>
+                        }<br>
+                        <br>
+                        <span>.line8>.dotted>.dot-middle-top</span> {<br>
+                        top: 0px;<br>
+                        -webkit-animation: dot-middle-top 2s cubic-bezier(0.250, 0, 0.705, 1) .35s infinite;<br>
+                        animation: dot-middle-top 2s cubic-bezier(0.250, 0, 0.705, 1) .35s infinite;<br>
+                        }<br>
+                        <br>
+                        <span>.line8>.dotted>.dot-middle-bottom</span> {<br>
+                        bottom: 0px;<br>
+                        -webkit-animation: dot-middle-bottom 2s cubic-bezier(0.250, 0, 0.705, 1) .35s infinite;<br>
+                        animation: dot-middle-bottom 2s cubic-bezier(0.250, 0, 0.705, 1) .35s infinite;<br>
+                        }<br>
+                        <br>
+                        <span>.line9</span> {<br>
+                        margin-left: 280px;<br>
+                        background-color: #4EF02B;<br>
+                        -webkit-animation: line 2s cubic-bezier(0.250, 0, 0.705, 1) .4s infinite;<br>
+                        animation: line 2s cubic-bezier(0.250, 0, 0.705, 1) .4s infinite;<br>
+                        }<br>
+                        <br>
+                        <span>.line9>span</span> {<br>
+                        background-color: #2544E7;<br>
+                        }<br>
+                        <br>
+                        <span>.line9>.dotted>.dot</span> {<br>
+                        background-color: #2544E7;<br>
+                        }<br>
+                        <br>
+                        <span>.line9>.dotted>.dot-top </span>{<br>
+                        top: 0px;<br>
+                        -webkit-animation: dot-top 2s cubic-bezier(0.250, 0, 0.705, 1) .4s infinite;<br>
+                        animation: dot-top 2s cubic-bezier(0.250, 0, 0.705, 1) .4s infinite;<br>
+                        }<br>
+                        <br>
+                        <span>.line9>.dotted>.dot-bottom</span> {<br>
+                        bottom: 0px;<br>
+                        -webkit-animation: dot-bottom 2s cubic-bezier(0.250, 0, 0.705, 1) .4s infinite;<br>
+                        animation: dot-bottom 2s cubic-bezier(0.250, 0, 0.705, 1) .4s infinite;<br>
+                        }<br>
+                        <br>
+                        <span>.line9>.dotted>.dot-middle-top</span> {<br>
+                        top: 0px;<br>
+                        -webkit-animation: dot-middle-top 2s cubic-bezier(0.250, 0, 0.705, 1) .4s infinite;<br>
+                        animation: dot-middle-top 2s cubic-bezier(0.250, 0, 0.705, 1) .4s infinite;<br>
+                        }<br>
+                        <br>
+                        <span>.line9>.dotted>.dot-middle-bottom</span> {<br>
+                        bottom: 0px;<br>
+                        -webkit-animation: dot-middle-bottom 2s cubic-bezier(0.250, 0, 0.705, 1) .4s infinite;<br>
+                        animation: dot-middle-bottom 2s cubic-bezier(0.250, 0, 0.705, 1) .4s infinite;<br>
+                        }<br>
+                        <br>
+                        <span>.line10</span> {<br>
+                        margin-left: 315px;<br>
+                        background-color: #38E790;<br>
+                        -webkit-animation: line 2s cubic-bezier(0.250, 0, 0.705, 1) .45s infinite;<br>
+                        animation: line 2s cubic-bezier(0.250, 0, 0.705, 1) .45s infinite;<br>
+                        }<br>
+                        <br>
+                        <span>.line10>span </span>{<br>
+                        background-color: #852DF4;<br>
+                        }<br>
+                        <br>
+                        <span>.line10>.dotted>.dot</span> {<br>
+                            background-color: #852DF4;<br>
+                            }<br>
+                            <br>
+                            <span>.line10>.dotted>.dot-top</span> {<br>
+                            top: 0px;<br>
+                            -webkit-animation: dot-top 2s cubic-bezier(0.250, 0, 0.705, 1) .45s infinite;<br>
+                            animation: dot-top 2s cubic-bezier(0.250, 0, 0.705, 1) .45s infinite;<br>
+                            }<br>
+                            <br>
+                            <span>.line10>.dotted>.dot-bottom</span> {<br>
+                            bottom: 0px;<br>
+                            -webkit-animation: dot-bottom 2s cubic-bezier(0.250, 0, 0.705, 1) .45s infinite;<br>
+                            animation: dot-bottom 2s cubic-bezier(0.250, 0, 0.705, 1) .45s infinite;<br>
+                            }<br>
+                            <br>
+                            <span>.line10>.dotted>.dot-middle-top</span> {<br>
+                            top: 0px;<br>
+                            -webkit-animation: dot-middle-top 2s cubic-bezier(0.250, 0, 0.705, 1) .45s infinite;<br>
+                            animation: dot-middle-top 2s cubic-bezier(0.250, 0, 0.705, 1) .45s infinite;<br>
+                            }<br>
+                            <br>
+                            <span>.line10>.dotted>.dot-middle-bottom</span> {<br>
+                            bottom: 0px;<br>
+                            -webkit-animation: dot-middle-bottom 2s cubic-bezier(0.250, 0, 0.705, 1) .45s infinite;<br>
+                            animation: dot-middle-bottom 2s cubic-bezier(0.250, 0, 0.705, 1) .45s infinite;<br>
+                            }<br>
+                            <br>
+                            <span>.line11</span> {<br>
+                            margin-left: 350px;<br>
+                            background-color: #25EACC;<br>
+                            -webkit-animation: line 2s cubic-bezier(0.250, 0, 0.705, 1) .5s infinite;<br>
+                            animation: line 2s cubic-bezier(0.250, 0, 0.705, 1) .5s infinite;<br>
+                            }<br>
+                            <br>
+                            <span>.line11>span</span> {<br>
+                            background-color: #F42DF1;<br>
+                            }<br>
+                            <br>
+                            <span>.line11>.dotted>.dot</span> {<br>
+                            background-color: #F42DF1;<br>
+                            }<br>
+                            <br>
+                            <span>.line11>.dotted>.dot-top</span> {<br>
+                            top: 0px;<br>
+                            -webkit-animation: dot-top 2s cubic-bezier(0.250, 0, 0.705, 1) .5s infinite;<br>
+                            animation: dot-top 2s cubic-bezier(0.250, 0, 0.705, 1) .5s infinite;<br>
+                            }<br>
+                            <br>
+                            <span>.line11>.dotted>.dot-bottom </span>{<br>
+                            bottom: 0px;<br>
+                            -webkit-animation: dot-bottom 2s cubic-bezier(0.250, 0, 0.705, 1) .5s infinite;<br>
+                            animation: dot-bottom 2s cubic-bezier(0.250, 0, 0.705, 1) .5s infinite;<br>
+                            }<br>
+                            <br>
+                            <span>.line11>.dotted>.dot-middle-top</span> {<br>
+                            top: 0px;<br>
+                            -webkit-animation: dot-middle-top 2s cubic-bezier(0.250, 0, 0.705, 1) .5s infinite;<br>
+                            animation: dot-middle-top 2s cubic-bezier(0.250, 0, 0.705, 1) .5s infinite;<br>
+                            }<br>
+                            <br>
+                            <span>.line11>.dotted>.dot-middle-bottom</span> {<br>
+                            bottom: 0px;<br>
+                            -webkit-animation: dot-middle-bottom 2s cubic-bezier(0.250, 0, 0.705, 1) .5s infinite;<br>
+                            animation: dot-middle-bottom 2s cubic-bezier(0.250, 0, 0.705, 1) .5s infinite;<br>
+                            }<br>
+                            <br>
+                            <span>@-webkit-keyframes line</span> {<br>
+                            <span>0%</span> {<br>
+                            height: 4px;<br>
+                            top: 0px;<br>
+                            left: 0px;<br>
+                            -webkit-transform: rotate(-65deg)<br>
+                            }<br>
+                            <br>
+                            <span>10%</span> {<br>
+                            height: 220px;<br>
+                            top: -110px;<br>
+                            left: 15px;<br>
+                            }<br>
+                            <br>
+                            <span>45%</span> {<br>
+                            height: 200px;<br>
+                            top: -100px;<br>
+                            left: 25px;<br>
+                            }<br>
+                            <br>
+                            <span>70%</span> {<br>
+                            height: 8px;<br>
+                            top: 0px;<br>
+                            left: 25px;<br>
+                            -webkit-transform: rotate(0deg);<br>
+                            }<br>
+                            <br>
+                            <span>100%</span> {<br>
+                            height: 8px;<br>
+                            top: 0px;<br>
+                            left: 15px;<br>
+                            -webkit-transform: rotate(0deg);<br>
+                            }<br>
+                            }<br>
+                            <br>
+                            <span>@-webkit-keyframes dot-top</span> {<br>
+                            <span>0%</span> {<br>
+                            top: -30px<br>
+                            }<br>
+                            <br>
+                            <span>10%</span> {<br>
+                            top: -30px;<br>
+                            }<br>
+                            <br>
+                            <span>45%</span> {<br>
+                            top: -25px;<br>
+                            }<br>
+                            <br>
+                            <span>60%</span> {<br>
+                            top: 0px;<br>
+                            }<br>
+                            <br>
+                            <span>100%</span>{<br>
+                            top: 0px;<br>
+                            }<br>
+                            }<br>
+                            <br>
+                            <span>@-webkit-keyframes dot-bottom</span> {<br>
+                            <span>0%</span> {<br>
+                            bottom: -30px<br>
+                            }<br>
+                            <br>
+                            <span>10%</span> {<br>
+                            bottom: -30px;<br>
+                            }<br>
+                            <br>
+                            <span>45%</span> {<br>
+                            bottom: -25px;<br>
+                            }<br>
+                            <br>
+                            <span>60%</span> {<br>
+                            bottom: 0px;<br>
+                            }<br>
+                            <br>
+                            <span>100%</span> {<br>
+                            bottom: 0px;<br>
+                            }<br>
+                            }<br>
+                            <br>
+                            <span>@-webkit-keyframes dot-middle-top</span> {<br>
+                            <span>0%</span> {}<br>
+                        
+                            <span>10%</span> {}<br>
+                        
+                            <span>45%</span> {<br>
+                            top: 98px;<br>
+                            }<br>
+                            <br>
+                            <span>70%</span> {<br>
+                            top: -50px;<br>
+                            }<br>
+                            <br>
+                            <span>85%</span> {<br>
+                            top: 0px;<br>
+                            }<br>
+                            <br>
+                            <span>100%</span> {<br>
+                            top: 0px;<br>
+                            }<br>
+                            }<br>
+                            <br>
+                            <span>@-webkit-keyframes dot-middle-bottom</span> {<br>
+                            <span>0%</span> {}<br>
+                            <br>
+                            <span>10%</span> {}<br>
+                            <br>
+                            <span>45%</span> {<br>
+                            bottom: 98px;<br>
+                            }<br>
+                            <br>
+                            <span>70%</span> {<br>
+                            bottom: -50px;<br>
+                            }<br>
+                            <br>
+                            <span>85%</span> {<br>
+                            bottom: 0px;<br>
+                            }<br>
+                            <br>
+                            <span>100%</span> {<br>
+                            bottom: 0px;<br>
+                            }<br>
+                            }<br>
+                            <br>
+                            <span>@keyframes line</span> {<br>
+                            <span>0%</span> {<br>
+                            height: 4px;<br>
+                            top: 0px;<br>
+                            left: 0px;<br>
+                            transform: rotate(-65deg)<br>
+                            }<br>
+                            <br>
+                            <span>10%</span> {<br>
+                            height: 220px;<br>
+                            top: -110px;<br>
+                            left: 15px;<br>
+                            }<br>
+                            <br>
+                            <span>45%</span>{<br>
+                            height: 200px;<br>
+                            top: -100px;<br>
+                            left: 25px;<br>
+                            }<br>
+                            <br>
+                            <span>70%</span> {<br>
+                            height: 8px;<br>
+                            top: 0px;<br>
+                            left: 25px;<br>
+                            transform: rotate(0deg);<br>
+                            }<br>
+                            <br>
+                            <span>100%</span> {<br>
+                            height: 8px;<br>
+                            top: 0px;<br>
+                            left: 15px;<br>
+                            transform: rotate(0deg);<br>
+                            }<br>
+                            }<br>
+                            <br>
+                            <span>@keyframes dot-top</span> {<br>
+                            <span>0%</span> {<br>
+                            top: -30px<br>
+                            }<br>
+                            <br>
+                            <span>10%</span> {<br>
+                            top: -30px;<br>
+                            }<br>
+                            <br>
+                            <span>45%</span> {<br>
+                            top: -25px;<br>
+                            }<br>
+                            <br>
+                            <span>60%</span> {<br>
+                            top: 0px;<br>
+                            }<br>
+                            <br>
+                            <span>100%</span> {<br>
+                            top: 0px;<br>
+                            }<br>
+                            }<br>
+                            <br>
+                            <span>@keyframes dot-bottom</span> {<br>
+                            <span>0%</span> {<br>
+                            bottom: -30px<br>
+                            }<br>
+                            <br>
+                            <span>10%</span> {<br>
+                            bottom: -30px;<br>
+                            }<br>
+                            <br>
+                            <span>45%</span> {<br>
+                            bottom: -25px;<br>
+                            }<br>
+                            <br>
+                            <span>60%</span> {<br>
+                            bottom: 0px;<br>
+                            }<br>
+                            <br>
+                            <span>100%</span> {<br>
+                            bottom: 0px;<br>
+                            }<br>
+                            }<br>
+                            <br>
+                            <span>@keyframes dot-middle-top</span> {<br>
+                            <span>0%</span> {}<br>
+                            <br>
+                            <span>10%</span> {}<br>
+                            <br>
+                            <span>45%</span> {<br>
+                            top: 78px;<br>
+                            }<br>
+                            <br>
+                            <span>70%</span> {<br>
+                            top: -50px;<br>
+                            }<br>
+                            <br>
+                            <span>85%</span> {<br>
+                            top: 0px;<br>
+                            }<br>
+                            <br>
+                            <span>100%</span> {<br>
+                            top: 0px;<br>
+                            }<br>
+                            }<br>
+                            <br>
+                            <span>@keyframes dot-middle-bottom</span> {<br>
+                            <span>0%</span> {}<br>
+                            <br>
+                            <span>10%</span> {}<br>
+                            <br>
+                            <span>45%</span> {<br>
+                            bottom: 78px;<br>
+                            }<br>
+                            <br>
+                            <span>70%</span> {<br>
+                            bottom: -50px;<br>
+                            }<br>
+                            <br>
+                            <span>85%</span> {<br>
+                            bottom: 0px;<br>
+                            }<br>
+                            <br>
+                            <span>100%</span> {<br>
+                            bottom: 0px;<br>
+                            }<br>
+                            }<br>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="efeito-container">
+            <h1 class="title">Botão</h1>
+            <div class="informacoes">
+                <img src="./img/btn.png" alt="">
+                <img src="./img/btn2.png" alt="">
+            </div>
+            <div class="info">
+                <h1>Efeito de <span>Neon.</span></h1>
+                <p>Neste efeito só utilizará HTML e CSS.</p>
+            </div>
+            <div class="codigo-box">
+                <div class="codigo-container">
+                    <h1>Codigo <span>HTML.</span></h1>
+                    <div class="codigo">
+                        &lt<span>a</span> href="#" class="neon-blue"> Neon Azul &lt/<span>a</span>>
+                    </div>
+                </div>
+        
+                <div class="codigo-container">
+                    <h1>Codigo <span>CSS.</span></h1>
+                    <div class="codigoCss">
+                        <span>.neon-blue</span> {<br>
+                        position: relative;<br>
+                        display: inline-block;<br>
+                        padding: 15px 20px;<br>
+                        margin: 40px 0;<br>
+                        color: #0aa8e6;<br>
+                        font-family: 'open_sansbold';<br>
+                        text-decoration: none;<br>
+                        transition: 0.4s;<br>
+                        letter-spacing: 4px;<br>
+                        overflow: hidden;<br>
+                        margin-right: 50px;<br>
+                        border: 2px solid #0aa8e6;<br>
+                        border-radius: 50px;<br>
+                        }<br>
+                        <br>
+                        <span>.neon-blue:hover</span> {<br>
+                        background: #0aa8e6;<br>
+                        color: #000;<br>
+                        box-shadow: 0 0 10px #0aa8e6, 0 0 40px #0aa8e6, 0 0 70px #0aa8e6;<br>
+                        }<br>
+                        <br>
+                        <span>.neon-blue:active</span> {<br>
+                        color: #0aa8e6;<br>
+                        background: #000000;<br>
                         }
                     </div>
                 </div>
