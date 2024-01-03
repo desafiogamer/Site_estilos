@@ -465,32 +465,37 @@ body{
         overflow: auto;
     }
 
-    #cobtainer-box{
-        height: 168vh;
-    }
-        
-    .efeito-container{
+    .efeito-container {
         padding-top: 100px;
         padding-left: 0;
     }
 
-    .icon{
+    .icon {
         display: none;
     }
 
-    .navbar{
+    .title{
+        text-align: center;
+        font-size: 40px;
+    }
+
+    .navbar {
         display: flex;
         justify-content: space-between;
         width: 100%;
         padding: 10px 0;
     }
 
-    .black{
-        background: linear-gradient(to right, #000000e1,100%, transparent);
+    .black {
+        background: linear-gradient(to right, #000000e1, 100%, transparent);
         min-height: 100vh;
     }
 
-    .contact{
+    #cobtainer-box{
+        height: 168vh;
+    }
+
+    .contact {
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -498,38 +503,38 @@ body{
         text-align: center;
     }
 
-    .contact h1{
+    .contact h1 {
         font-size: 30px;
         margin-left: 0;
     }
 
-    .contact p{
+    .contact p {
         font-size: 15px;
     }
 
-    .textarea-field{
+    .textarea-field {
         width: 400px;
     }
 
-    .black form textarea{
+    .black form textarea {
         margin-left: -25px;
     }
 
-    .black form{
+    .black form {
         width: 100%;
         padding: 0 30px;
     }
 
-    .info{
+    .info {
         padding: 0;
         text-align: center;
     }
 
-    .codigo-box{
+    .codigo-box {
         padding: 0;
     }
 
-    .codigo-container{
+    .codigo-container {
         width: 100%;
         display: flex;
         flex-direction: column;
@@ -537,12 +542,13 @@ body{
         align-items: center;
     }
 
-    .codigo, .codigoCss{
+    .codigo,
+    .codigoCss {
         width: 90%;
         margin: 0 auto;
     }
 
-    .black form{
+    .black form {
         margin-left: 0px;
     }
 
