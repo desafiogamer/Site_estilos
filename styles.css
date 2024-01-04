@@ -159,7 +159,7 @@ body {
     position: absolute;
     background: linear-gradient(to right, black, 70%, transparent);
     width: 100%;
-    min-height: 100dvh;
+    min-height: 100vh;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -191,49 +191,16 @@ body {
     }
 }
 
-.black form {
-    width: 400px;
-    margin-left: 30px;
+.rede-social{
+    margin-left: 20px;
 }
 
-.black form input {
-    border-radius: 5px;
-    padding: 5px;
-    outline: none;
-    margin-right: 10px;
-    margin-bottom: 10px;
-    transition: .3s;
-}
-
-.black form input:focus {
-    outline: 1px solid var(--main-color);
-}
-
-.black form textarea {
-    outline: none;
-    border-radius: 5px;
-    width: 94%;
-    padding: 10px;
-    transition: .3s;
-}
-
-.black form textarea:focus {
-    outline: 1px solid var(--main-color);
-}
-
-.btn button {
-    border-radius: 10px;
-    margin: 0 auto;
-    outline: none;
-    height: 30px;
-    padding: 0 10px;
-    margin-top: 10px;
-    cursor: pointer;
-    transition: .3s;
-}
-
-.btn button:hover {
-    outline: 1px solid var(--main-color);
+.rede-social a{
+    text-decoration: none;
+    color: #0f0;
+    animation: animateHeader 10s linear infinite;
+    margin-left: 10px;
+    font-size: 23px;
 }
 
 .input-box {
@@ -467,7 +434,11 @@ body {
         display: none;
     }
 
-    .title{
+    .rede-social{
+        margin-left: 0px;
+    }
+
+    .title {
         text-align: center;
         font-size: 40px;
     }
@@ -481,11 +452,11 @@ body {
 
     .black {
         background: linear-gradient(to right, #000000e1, 100%, transparent);
-        height: 100dvh;
+        height: 100vh;
     }
 
     .cobtainer-box{
-        height: 100dvh;
+        height: 100vh;
     }
 
     .contact {
