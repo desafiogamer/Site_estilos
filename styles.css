@@ -480,6 +480,11 @@ body {
 
     .black {
         background: linear-gradient(to right, #000000e1, 100%, transparent);
+        height: 100vh;
+    }
+
+    .cobtainer-box{
+        height: 100vh;
     }
 
     .contact {
