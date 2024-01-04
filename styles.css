@@ -279,6 +279,7 @@ body {
     z-index: 99;
     transition: 1s;
     padding-bottom: 30px;
+    overflow-x: hidden;
 }
 
 .About.ativo {
