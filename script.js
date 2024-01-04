@@ -18,7 +18,7 @@ window.onmousemove = function(e){
 
 BtnProximo.addEventListener('click', function(){
     home.style.display = 'none'
-    body.style.overflow = 'auto'
+    body.style.overflowY = 'auto'
     About.classList.add('ativo')
 
 })
