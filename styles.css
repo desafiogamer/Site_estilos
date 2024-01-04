@@ -159,7 +159,7 @@ body {
     position: absolute;
     background: linear-gradient(to right, black, 70%, transparent);
     width: 100%;
-    min-height: 100vh;
+    min-height: 100dvh;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -481,11 +481,11 @@ body {
 
     .black {
         background: linear-gradient(to right, #000000e1, 100%, transparent);
-        height: 100vh;
+        height: 100dvh;
     }
 
     .cobtainer-box{
-        height: 100vh;
+        height: 100dvh;
     }
 
     .contact {
